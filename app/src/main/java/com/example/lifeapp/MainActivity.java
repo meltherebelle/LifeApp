@@ -17,14 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        returnBtn = (Button) findViewById(R.id.returnBtn);
-        returnBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMainActivity();
-            }
-        });
 
+        //accéder à l'écran d'acceuil en cliquant sur Enter
         button = (Button) findViewById(R.id.resultsBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,13 +28,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //méthode pour ouvrir l'écran d'acceuil
     public void openAcceuil() {
         Intent intent = new Intent(this, Acceuil.class);
-        startActivity(intent);
-    }
-
-    public void openMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
