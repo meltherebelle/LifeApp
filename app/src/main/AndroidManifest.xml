@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeApp">
         <activity
+            android:name=".GoalsPerso"
+            android:exported="false" />
+        <activity
+            android:name=".Hobbies"
+            android:exported="false" />
+        <activity
+            android:name=".Mood"
+            android:exported="false" />
+        <activity
+            android:name=".ImBored"
+            android:exported="false" />
+        <activity
             android:name=".Datas"
             android:exported="false" />
         <activity

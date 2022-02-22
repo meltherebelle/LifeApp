@@ -10,6 +10,7 @@ import android.os.Bundle;
 public class Acceuil extends AppCompatActivity {
 
     Button returnBtn;
+    Button PersoBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,15 @@ public class Acceuil extends AppCompatActivity {
                 openMainActivity();
             }
         });
-    }
+
+        //ouvrir activité Perso au clic du PersoBtn
+        PersoBtn = (Button) findViewById(R.id.PersoBtn);
+        PersoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPerso();
+            }
+        });}
 
     //méthode pour ouvrir le mainActivity
     public void openMainActivity() {
@@ -32,6 +41,11 @@ public class Acceuil extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void openPerso() {
+        Intent intent = new Intent(this, Perso.class);
+        startActivity(intent);
+    }
 
     /*this.MyActivity.finish();
 
