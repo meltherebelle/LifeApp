@@ -10,7 +10,7 @@ import android.content.Intent;
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
-    private Button returnBtn;
+    private Button enterBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //accéder à l'écran d'acceuil en cliquant sur Enter
-        button = (Button) findViewById(R.id.resultsBtn);
+        button = (Button) findViewById(R.id.EnterBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -7,7 +7,7 @@
     tools:context=".Acceuil">
 
     <Button
-        android:id="@+id/resultsBtn"
+        android:id="@+id/EnterBtn"
         android:layout_width="139dp"
         android:layout_height="52dp"
         android:layout_marginStart="130dp"
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/datasBtn"
+        android:id="@+id/ReturnBtn"
         android:layout_width="99dp"
         android:layout_height="45dp"
         android:layout_marginStart="304dp"
@@ -39,7 +39,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/workBtn"
+        android:id="@+id/WorkBtn"
         android:layout_width="139dp"
         android:layout_height="52dp"
         android:layout_marginStart="130dp"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/persoBtn"
+        android:id="@+id/PersoBtn"
         android:layout_width="139dp"
         android:layout_height="52dp"
         android:layout_marginStart="130dp"
