@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Work">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="99dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="11dp"
-        android:text="return"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="150dp"
@@ -28,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/PomodoroBtn"
         android:layout_width="170dp"
         android:layout_height="49dp"
         android:layout_marginStart="120dp"
@@ -37,30 +27,47 @@
         android:text="Pomodoro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/GoalsBtn" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/GoalsBtn"
         android:layout_width="170dp"
         android:layout_height="49dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="120dp"
-        android:text="Get motivated"
+        android:text="Goals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="170dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="120dp"
-        android:text="Goals"
+    <TextView
+        android:id="@+id/QuoteTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="254dp"
+        android:text="Quote"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/PomodoroBtn" />
+
+    <Button
+        android:id="@+id/ReturnBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="607dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="21dp"
+        android:text="Return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
