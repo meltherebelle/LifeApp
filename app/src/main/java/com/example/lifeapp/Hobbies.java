@@ -11,7 +11,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Hobbies extends AppCompatActivity {
 
-    RecyclerView recyclerView;
+    RecyclerView ListHobbies;
     FloatingActionButton add_button;
 
     Button Return11Btn;
@@ -21,7 +21,7 @@ public class Hobbies extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hobbies);
 
-        recyclerView = findViewById(R.id.recyclerView);
+        ListHobbies = findViewById(R.id.ListHobbies);
         add_button = findViewById(R.id.add_button);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override

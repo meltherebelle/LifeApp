@@ -11,6 +11,8 @@
         android:theme="@style/Theme.LifeApp">
         <activity
             android:name=".AddActivity"
+            android:label="Add Hobby"
+            android:parentActivityName=".Hobbies"
             android:exported="false" />
         <activity
             android:name=".GoalsPerso"
