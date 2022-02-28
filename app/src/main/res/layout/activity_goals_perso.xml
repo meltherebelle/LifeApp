@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".GoalsPerso">
 
+    <Button
+        android:id="@+id/Return12Btn"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="11dp"
+        android:text="return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/PersoGoalsTxt"
         android:layout_width="wrap_content"

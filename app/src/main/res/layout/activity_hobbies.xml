@@ -6,9 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".Hobbies">
 
+    <Button
+        android:id="@+id/Return11Btn"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="11dp"
+        android:text="return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/HobbiesTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="What are your Hobbies" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListHobbies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_addhobbies" />
 </RelativeLayout>
