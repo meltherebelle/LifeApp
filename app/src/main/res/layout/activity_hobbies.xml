@@ -25,7 +25,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ListHobbies"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_button"
@@ -33,9 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="41dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:clickable="true"
         android:focusable="true"
-        app:srcCompat="@drawable/ic_addhobbies" />
+        app:srcCompat="@drawable/ic_addhobbies"
+        tools:ignore="SpeakableTextPresentCheck" />
 </RelativeLayout>
