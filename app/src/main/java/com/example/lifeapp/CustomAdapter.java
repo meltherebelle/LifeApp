@@ -73,6 +73,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             super(itemView);
             book_id_txt = itemView.findViewById(R.id.book_id_txt);
             book_title_txt = itemView.findViewById(R.id.book_title_txt);
+            book_author_txt = itemView.findViewById(R.id.book_author_txt);
             book_pages_txt = itemView.findViewById(R.id.book_pages_txt);
             /* mainLayout = itemView.findViewById(R.id.mainLayout);
             //Animate Recyclerview
