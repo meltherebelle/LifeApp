@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">LifeApp+</string>
-    <string name="life">LIFE+</string>
+    <string name="app_name">LifeApp</string>
+    <string name="life">LIFE</string>
     <string name="enter">Enter</string>
-    <string name="results">Results</string>
     <string name="datas">Datas</string>
+    <string name="perso">Perso</string>
+    <string name="results">Results</string>
     <string name="work">Work</string>
     <string name="Return">return</string>
-    <string name="perso">perso</string>
 </resources>
