@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/delph/Documents/EPF/2A/S4/LifeApp/app/src/main/res/layout/activity_acceuil.xml" value="0.22" />
-        <entry key="..\:/Users/delph/Documents/EPF/2A/S4/LifeApp/app/src/main/res/layout/activity_main.xml" value="0.13043478260869565" />
-        <entry key="..\:/Users/delph/Documents/EPF/2A/S4/LifeApp/app/src/main/res/layout/activity_work.xml" value="0.14666666666666667" />
+        <entry key="app/src/main/res/drawable/fond_label_xml.xml" value="0.313" />
+        <entry key="app/src/main/res/drawable/ic_addhobbies.xml" value="0.2535" />
         <entry key="app/src/main/res/layout/activity_acceuil.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_add.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/activity_datas.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_goals_perso.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_hobbies.xml" value="0.3119256263922069" />
+        <entry key="app/src/main/res/layout/activity_im_bored.xml" value="0.24791666666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2957931518554688" />
-        <entry key="app/src/main/res/layout/activity_perso.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_mood.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_perso.xml" value="0.3858428955078125" />
         <entry key="app/src/main/res/layout/activity_results.xml" value="0.23385416666666667" />
         <entry key="app/src/main/res/layout/activity_work.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/layout/my_row.xml" value="0.35391971181491905" />
       </map>
     </option>
   </component>
@@ -20,5 +25,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.35391971181491905" />
+      </ProjectState>
+    </option>
   </component>
 </project>

@@ -5,22 +5,31 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Life+"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeApp">
         <activity
-            android:name=".GoalsPerso"
+            android:name=".AddActivity"
+            android:label="Add Hobby"
+            android:parentActivityName=".Hobbies"
             android:exported="false" />
+        <activity
+            android:name=".GoalsPerso"
+            android:exported="false"
+            android:label="Personal section - Goals" />
         <activity
             android:name=".Hobbies"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Personal section - Hobbies" />
         <activity
             android:name=".Mood"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Personal section - Mood" />
         <activity
             android:name=".ImBored"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Personal section - I&apos;m Bored" />
         <activity
             android:name=".Datas"
             android:exported="false" />
@@ -29,7 +38,8 @@
             android:exported="false" />
         <activity
             android:name=".Perso"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Personal section" />
         <activity
             android:name=".Work"
             android:exported="false" />

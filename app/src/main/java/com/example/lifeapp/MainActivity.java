@@ -17,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //envoyer un SMS - test
+        /*SmsManager sms = SmsManager.getDefault();
+        String receiver = "0606060606"; //numéro à appeler
+        String texte = "Salut de ma superbe appli Android"; //texte à envoyer sms.sendTextMessage(receiver, null, texte, null, null);
+         */
 
         //accéder à l'écran d'acceuil en cliquant sur Enter
         button = (Button) findViewById(R.id.EnterBtn);
