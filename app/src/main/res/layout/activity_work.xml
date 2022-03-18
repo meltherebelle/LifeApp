@@ -7,7 +7,7 @@
     tools:context=".Work">
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/ReturnBtn2"
         android:layout_width="99dp"
         android:layout_height="48dp"
         android:layout_marginStart="15dp"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/Pomodoro"
         android:layout_width="170dp"
         android:layout_height="49dp"
         android:layout_marginStart="120dp"
@@ -37,10 +37,10 @@
         android:text="Pomodoro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/Quotes" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/Quotes"
         android:layout_width="170dp"
         android:layout_height="49dp"
         android:layout_marginStart="120dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/Goals"
         android:layout_width="170dp"
         android:layout_height="49dp"
         android:layout_marginStart="120dp"
@@ -61,6 +61,6 @@
         android:text="Goals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/Pomodoro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
