@@ -1,9 +1,11 @@
 package com.example.lifeapp;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.database.Cursor;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +22,7 @@ public class Hobbies extends AppCompatActivity {
     Button Return11Btn;
     RecyclerView ListHobbies;
     FloatingActionButton add_button;
+    public static Activity activity ;
 
     MyDatabaseHelper myDB;
     ArrayList<String> book_id, book_title, book_author, book_pages;
@@ -29,7 +32,7 @@ public class Hobbies extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hobbies);
-
+        activity=this;
         ListHobbies = findViewById(R.id.ListHobbies);
         add_button = findViewById(R.id.add_button);
         add_button.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +71,14 @@ public class Hobbies extends AppCompatActivity {
     public void openPerso() {
         Intent intent = new Intent(this, Perso.class);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 1){ //refreshing our hobbies activity
+            recreate();
+        }
     }
 
     //stock le résultat de readAllData dans les listes
