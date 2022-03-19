@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class AddActivity extends AppCompatActivity {
+public class AddActivity extends AppCompatActivity { //for Hobby Section in Personal
 
     EditText title_input, author_input, pages_input;
     Button add_button;

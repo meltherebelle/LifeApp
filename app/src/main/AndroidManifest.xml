@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeApp">
         <activity
-            android:name=".AddActivity"
-            android:label="Add Hobby"
-            android:parentActivityName=".Hobbies"
+            android:name=".UpdateHobby"
             android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:label="Add Hobby"
+            android:parentActivityName=".Hobbies" />
         <activity
             android:name=".GoalsPerso"
             android:exported="false"
