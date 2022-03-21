@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:backgroundTint="#FFC107"
     tools:context=".Acceuil">
 
     <Button
-        android:id="@+id/EnterBtn"
+        android:id="@+id/ResultsBtn"
         android:layout_width="139dp"
         android:layout_height="52dp"
         android:layout_marginStart="130dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="130dp"
+        android:backgroundTint="#00BCD4"
         android:text="@string/results"
+        android:translationY="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent" />
@@ -22,19 +26,26 @@
         android:id="@+id/returnBtn"
         android:layout_width="99dp"
         android:layout_height="45dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF9800"
         android:text="@string/Return"
+        android:translationX="16dp"
+        android:translationY="16dp"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/ReturnBtn"
+        android:id="@+id/DatasBtn"
         android:layout_width="99dp"
         android:layout_height="45dp"
         android:layout_marginStart="304dp"
         android:layout_marginBottom="8dp"
+        android:backgroundTint="#00BCD4"
         android:text="@string/datas"
+        android:translationX="-16dp"
+        android:translationY="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -45,7 +56,9 @@
         android:layout_marginStart="130dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="130dp"
+        android:backgroundTint="#E91E63"
         android:text="@string/work"
+        android:translationY="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +70,9 @@
         android:layout_marginStart="130dp"
         android:layout_marginTop="240dp"
         android:layout_marginEnd="130dp"
+        android:backgroundTint="#E91E63"
         android:text="@string/perso"
+        android:translationY="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

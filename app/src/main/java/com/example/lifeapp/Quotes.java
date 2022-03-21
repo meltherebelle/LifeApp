@@ -1,4 +1,9 @@
 package com.example.lifeapp;
 
-public class Quotes {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Quotes extends AppCompatActivity {
+
 }
