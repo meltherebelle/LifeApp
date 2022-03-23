@@ -4,14 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
-
 import android.os.Bundle;
 
 public class Work extends AppCompatActivity {
 
     Button ReturnBtn2;
     Button Pomodoro;
-    Button Goals;
+    Button GoalsWork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +35,12 @@ public class Work extends AppCompatActivity {
             }
         });
 
-        /* aller sur la page Goals au clic du bouton Goals */
-        Goals = (Button) findViewById(R.id.Goals);
-        Goals.setOnClickListener(new View.OnClickListener() {
+        /* aller sur la page GoalsWork au clic du bouton GoalsWork */
+        GoalsWork = (Button) findViewById(R.id.GoalsWork);
+        GoalsWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openGoals();
+                openGoalsWork();
             }
         });
     }
@@ -56,9 +55,8 @@ public class Work extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openGoals() {
-        Intent intent = new Intent(this, Pomodoro.class);
+    public void openGoalsWork() {
+        Intent intent = new Intent(this, GoalsWork.class);
         startActivity(intent);
     }
-
 }

@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/Goals"
+        android:id="@+id/GoalsWork"
         android:layout_width="170dp"
         android:layout_height="49dp"
         android:layout_marginStart="120dp"

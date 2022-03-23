@@ -1,5 +1,7 @@
 package com.example.lifeapp;
 
+import static com.example.lifeapp.R.id.WorkBtn;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +13,7 @@ public class Acceuil extends AppCompatActivity {
 
     Button returnBtn;
     Button PersoBtn;
+    Button WorkBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +36,17 @@ public class Acceuil extends AppCompatActivity {
             public void onClick(View view) {
                 openPerso();
             }
-        });}
+        });
+
+        //ouvrir activité Work au clic du WorkBtn
+        WorkBtn = (Button) findViewById(R.id.WorkBtn);
+        WorkBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openWork();
+            }
+        });
+    }
 
     //méthode pour ouvrir le mainActivity
     public void openMainActivity() {
@@ -41,9 +54,13 @@ public class Acceuil extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     public void openPerso() {
         Intent intent = new Intent(this, Perso.class);
+        startActivity(intent);
+    }
+
+    public void openWork() {
+        Intent intent = new Intent(this, Work.class);
         startActivity(intent);
     }
 
