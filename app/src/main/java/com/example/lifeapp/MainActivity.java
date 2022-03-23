@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
          */
 
         //accéder à l'écran d'acceuil en cliquant sur Enter
-        button = (Button) findViewById(R.id.EnterBtn);
+        button = (Button) findViewById(R.id.ResultsBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
