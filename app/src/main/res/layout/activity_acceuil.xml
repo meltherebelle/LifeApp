@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sunbackgroundmain"
     tools:context=".Acceuil">
 
     <Button
-        android:id="@+id/EnterBtn"
+        android:id="@+id/ResultsBtn"
         android:layout_width="139dp"
         android:layout_height="52dp"
         android:layout_marginStart="130dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="130dp"
         android:text="@string/results"
+        android:translationY="400dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent" />
@@ -25,16 +27,19 @@
         android:layout_marginStart="15dp"
         android:layout_marginBottom="11dp"
         android:text="@string/Return"
+        android:translationY="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/ReturnBtn"
+        android:id="@+id/DatasBtn"
         android:layout_width="99dp"
         android:layout_height="45dp"
         android:layout_marginStart="304dp"
         android:layout_marginBottom="8dp"
         android:text="@string/datas"
+        android:translationX="-5dp"
+        android:translationY="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -46,6 +51,7 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="130dp"
         android:text="@string/work"
+        android:translationX="-50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

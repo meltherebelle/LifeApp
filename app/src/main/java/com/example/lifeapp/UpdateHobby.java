@@ -2,6 +2,8 @@ package com.example.lifeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,8 +33,24 @@ public class UpdateHobby extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Only then we call this
+
+                System.out.println("ce qu'on veut  " + title_input.getText());
+                id = getIntent().getStringExtra("id");
+                title =  title_input.getText().toString();
+                author = getIntent().getStringExtra("author");
+                pages = getIntent().getStringExtra("pages");
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateHobby.this);
                 myDB.updateData(id, title, author, pages);
+                Cursor cursor = myDB.readAllData();
+                System.out.println("result " + cursor.getCount());
+                if (cursor.getCount() != 0) {
+
+                    while (cursor.moveToNext()) {
+                       System.out.println(cursor.getString(0) + " "+ cursor.getString(1));
+                    }
+                }
+                finish();
+
             }
         });
 
