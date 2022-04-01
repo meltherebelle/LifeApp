@@ -9,7 +9,6 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
     private Button enterBtn;
 
     @Override
@@ -24,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
          */
 
         //accéder à l'écran d'acceuil en cliquant sur Enter
-        button = (Button) findViewById(R.id.ResultsBtn);
-        button.setOnClickListener(new View.OnClickListener() {
+        enterBtn = (Button) findViewById(R.id.enterBtn);
+        enterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openAcceuil();

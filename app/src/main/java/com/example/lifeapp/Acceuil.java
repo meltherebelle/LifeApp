@@ -64,30 +64,4 @@ public class Acceuil extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /*this.MyActivity.finish();
-
-
-    //  OU BIEN :
-
-    public class StatsActivity extends Activity {
-
-    Button returnBtn;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stats);
-
-        returnBtn = (Button) findViewById(R.id.returnBtn);
-        returnBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentReturn = new Intent(StatsActivity.this, MainActivity.class);
-                startActivity(intentReturn);
-            }
-        });
-    }
-}
-
-     */
 }
