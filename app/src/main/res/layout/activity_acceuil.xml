@@ -25,7 +25,7 @@
     <Button
         android:id="@+id/returnBtn"
         android:layout_width="99dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="15dp"
         android:layout_marginBottom="11dp"
         android:text="@string/Return"
@@ -36,7 +36,7 @@
     <Button
         android:id="@+id/DatasBtn"
         android:layout_width="99dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="304dp"
         android:layout_marginBottom="8dp"
         android:text="@string/datas"
