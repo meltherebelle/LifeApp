@@ -17,7 +17,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-//try commit -- error : failed to compile values file
+//NOT HOBBY FILE BUT TO DO LIST !!!
+
 public class Hobbies extends AppCompatActivity {
     Button Return11Btn;
     RecyclerView ListHobbies;

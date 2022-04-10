@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lifeTitle"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="110dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="58dp"
         android:layout_marginEnd="110dp"
         android:fontFamily="sans-serif"
         android:text="@string/life"
@@ -39,7 +40,7 @@
         app:iconTint="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/lifeTitle" />
 
     <Button
         android:id="@+id/SettingsBtn"

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeApp">
         <activity
+            android:name=".Hobby"
+            android:exported="false" />
+        <activity
             android:name=".UpdateHobby"
             android:exported="false" />
         <activity
