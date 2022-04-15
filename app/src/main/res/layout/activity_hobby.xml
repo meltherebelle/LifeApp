@@ -4,25 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
-    android:backgroundTint="#FFC107"
+    android:background="@drawable/fond_hobby"
     tools:context=".Hobby">
-
-    <TextView
-        android:id="@+id/TitleHobbytherealone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="-40dp"
-        android:layout_marginTop="24dp"
-        android:text="Select your hobbies"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#E91E63"
-        android:textSize="20dp"
-        android:textStyle="bold|italic"
-        android:translationX="200dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/return22Btn"
