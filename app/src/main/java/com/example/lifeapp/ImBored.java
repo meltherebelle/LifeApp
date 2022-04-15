@@ -12,7 +12,7 @@ import android.os.Bundle;
 public class ImBored extends AppCompatActivity {
 
     Button Return13Btn;
-    MediaPlayer mysound;
+    MediaPlayer skrillex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class ImBored extends AppCompatActivity {
         setContentView(R.layout.activity_im_bored);
 
         //Mettre de la musique
-        MediaPlayer mysound = MediaPlayer.create(getApplicationContext(),R.raw.mysound);
-        mysound.start();
+        skrillex = MediaPlayer.create(getApplicationContext(),R.raw.skrillex);
+        skrillex.start();
 
 
         //retourner sur Perso
@@ -42,7 +42,7 @@ public class ImBored extends AppCompatActivity {
     //Couper le son :
     protected void onPause() {
         super.onPause();
-        mysound.release();
+        skrillex.release();
         finish();
     }
 
