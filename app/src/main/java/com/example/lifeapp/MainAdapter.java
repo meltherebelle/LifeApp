@@ -23,7 +23,6 @@ public class MainAdapter extends BaseExpandableListAdapter {
     public MainAdapter(ArrayList<String> listGroup, HashMap<String,ArrayList<String>> listChild) {
         this.listGroup = listGroup;
         this.listChild = listChild;
-
     }
 
     @Override
