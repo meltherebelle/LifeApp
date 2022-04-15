@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+//the real HOBBY Activity !!!
+
 public class Hobby extends AppCompatActivity {
 
-    Button RealHobbyBtn;
     Button return22Btn;
 
     @Override
@@ -26,19 +27,5 @@ public class Hobby extends AppCompatActivity {
             }
         });
 
-        //aller sur écran Mood au clic du bouton MoodBtn
-        RealHobbyBtn = (Button) findViewById(R.id.RealHobbyBtn);
-        RealHobbyBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openHobby();
-            }
-        });
     }
-
-    public void openHobby () {
-        Intent intent = new Intent(this, Hobby.class);
-        startActivity(intent);
-    }
-
 }

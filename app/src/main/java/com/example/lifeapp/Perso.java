@@ -11,8 +11,9 @@ public class Perso extends AppCompatActivity {
     Button Return1Btn;
     Button MoodBtn;
     Button ImBoredBtn;
-    Button HobbiesBtn;
+    Button RealHobbyBtn;
     Button GoalsPersoBtn;
+    Button todolistBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,15 @@ public class Perso extends AppCompatActivity {
             }
         });
 
+        //aller sur écran TodoList au clic du bouton MoodBtn
+        todolistBtn = (Button) findViewById(R.id.todolistBtn);
+        todolistBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHobbies();
+            }
+        });
+
         //aller sur écran ImBored au clic du bouton ImBoredBtn
         ImBoredBtn = (Button) findViewById(R.id.ImBoredBtn);
         ImBoredBtn.setOnClickListener(new View.OnClickListener() {
@@ -47,11 +57,11 @@ public class Perso extends AppCompatActivity {
         });
 
         //aller sur écran Hobbies au clic du bouton HobbiesBtn
-        HobbiesBtn = (Button) findViewById(R.id.HobbiesBtn);
-        HobbiesBtn.setOnClickListener(new View.OnClickListener() {
+        RealHobbyBtn = (Button) findViewById(R.id.RealHobbyBtn);
+        RealHobbyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openHobbies();
+                openHobby();
             }
         });
 
@@ -80,13 +90,18 @@ public class Perso extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openHobbies () {
-        Intent intent = new Intent(this, Hobbies.class);
+    public void openHobby () {
+        Intent intent = new Intent(this, Hobby.class);
         startActivity(intent);
     }
 
     public void openGoalsPerso () {
         Intent intent = new Intent(this, GoalsPerso.class);
+        startActivity(intent);
+    }
+
+    public void openHobbies () {
+        Intent intent = new Intent(this, Hobbies.class);
         startActivity(intent);
     }
 }

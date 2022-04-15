@@ -17,7 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-//NOT HOBBY FILE BUT TO DO LIST !!!
+//NOT HOBBY FILE BUT THE *** TO DO LIST *** !!!
 
 public class Hobbies extends AppCompatActivity {
     Button Return11Btn;
