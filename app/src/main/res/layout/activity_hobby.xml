@@ -7,23 +7,24 @@
     android:background="@drawable/fond_hobby"
     tools:context=".Hobby">
 
-    <Button
-        android:id="@+id/return22Btn"
-        android:layout_width="99dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="24dp"
-        android:backgroundTint="#FF9800"
-        android:text="return"
-        android:translationX="16dp"
-        android:translationY="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
     <ExpandableListView
         android:id="@+id/expandableListHobby"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/return22Btn"
+            android:layout_width="99dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/back_button"
+            android:translationX="4dp"
+            android:translationY="75dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </ExpandableListView>
 
 </RelativeLayout>

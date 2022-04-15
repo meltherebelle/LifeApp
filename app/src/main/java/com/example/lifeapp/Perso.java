@@ -12,7 +12,6 @@ public class Perso extends AppCompatActivity {
     Button MoodBtn;
     Button ImBoredBtn;
     Button RealHobbyBtn;
-    Button GoalsPersoBtn;
     Button todolistBtn;
 
     @Override
@@ -64,16 +63,6 @@ public class Perso extends AppCompatActivity {
                 openHobby();
             }
         });
-
-        //aller sur écran GoalsPerso au clic du bouton GoalsPersoBtn
-        GoalsPersoBtn = (Button) findViewById(R.id.GoalsPersoBtn);
-        GoalsPersoBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openGoalsPerso();
-            }
-        });
-
     }
     public void openAcceuil () {
         Intent intent = new Intent(this, Acceuil.class);
@@ -92,11 +81,6 @@ public class Perso extends AppCompatActivity {
 
     public void openHobby () {
         Intent intent = new Intent(this, Hobby.class);
-        startActivity(intent);
-    }
-
-    public void openGoalsPerso () {
-        Intent intent = new Intent(this, GoalsPerso.class);
         startActivity(intent);
     }
 

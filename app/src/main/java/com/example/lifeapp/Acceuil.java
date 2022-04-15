@@ -14,6 +14,7 @@ public class Acceuil extends AppCompatActivity {
     Button returnBtn;
     Button PersoBtn;
     Button WorkBtn;
+    Button DatasBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,16 @@ public class Acceuil extends AppCompatActivity {
             }
         });
 
+        //ouvrir activité Datas au clic du DatasBtn
+        DatasBtn = (Button) findViewById(R.id.DatasBtn);
+        DatasBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDatas();
+            }
+        });
+
+
         //ouvrir activité Work au clic du WorkBtn
         WorkBtn = (Button) findViewById(R.id.WorkBtn);
         WorkBtn.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +72,11 @@ public class Acceuil extends AppCompatActivity {
 
     public void openWork() {
         Intent intent = new Intent(this, Work.class);
+        startActivity(intent);
+    }
+
+    public void openDatas() {
+        Intent intent = new Intent(this,Datas.class);
         startActivity(intent);
     }
 
