@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="@drawable/fond_work"
     tools:context=".Work">
 
     <Button
         android:id="@+id/ReturnBtn2"
         android:layout_width="99dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="280dp"
         android:layout_marginTop="5dp"
-        android:backgroundTint="#FF9800"
         android:text="return"
+        android:background="@drawable/custom_button"
         android:translationX="16dp"
         android:translationY="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="90dp"
         android:layout_marginEnd="120dp"
-        android:backgroundTint="#00BCD4"
+        android:background="@drawable/custom_button2"
         android:text="Pomodoro"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="120dp"
-        android:backgroundTint="#00BCD4"
+        android:background="@drawable/custom_button2"
         android:text="Get motivated"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,28 +56,12 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="90dp"
         android:layout_marginEnd="120dp"
-        android:backgroundTint="#00BCD4"
+        android:background="@drawable/custom_button2"
         android:text="Goals"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Pomodoro" />
-
-    <TextView
-        android:id="@+id/WorkSct"
-        android:layout_width="174dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="Work Section"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#E91E63"
-        android:textSize="20dp"
-        android:textStyle="bold|italic"
-        android:translationX="200dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

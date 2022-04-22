@@ -78,12 +78,13 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_TITLE, title);
         cv.put(COLUMN_AUTHOR, author);
         cv.put(COLUMN_PAGES, pages);
-
+System.out.println("new value :"+title);
         long result = db.update(TABLE_NAME, cv, "_id=?", new String[]{row_id});
         if(result == -1){ //no data or error
             Toast.makeText(context, "Failed to Update", Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(context, "Updated Successfully!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Update Successfully!", Toast.LENGTH_SHORT).show();
+
         }
 
     }
