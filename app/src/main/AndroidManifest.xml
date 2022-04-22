@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".Pomodoro"
+            android:exported="false" />
+        <activity
+            android:name=".GoalsWork"
+            android:exported="false" />
+        <activity
             android:name=".Hobby"
             android:exported="false" />
         <activity
