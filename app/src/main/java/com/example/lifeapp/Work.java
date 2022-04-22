@@ -11,6 +11,7 @@ public class Work extends AppCompatActivity {
     Button ReturnBtn2;
     Button Pomodoro;
     Button GoalsWork;
+    Button Quotes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,15 @@ public class Work extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openAcceuil();
+            }
+        });
+
+        /* aller sur la page Quotes au clic du bouton Get Motivated */
+        Quotes = (Button) findViewById(R.id.Quotes);
+        Quotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openQuotes();
             }
         });
 
@@ -47,6 +57,11 @@ public class Work extends AppCompatActivity {
 
     public void openAcceuil() {
         Intent intent = new Intent(this, Acceuil.class);
+        startActivity(intent);
+    }
+
+    public void openQuotes() {
+        Intent intent = new Intent(this, actQuotes.class);
         startActivity(intent);
     }
 
