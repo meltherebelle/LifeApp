@@ -9,11 +9,30 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="106dp"
-        android:layout_height="109dp"
+        android:layout_width="215dp"
+        android:layout_height="437dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="171dp"
+        app:srcCompat="@drawable/logos_settings" />
+
+    <ToggleButton
+        android:id="@+id/toggleModeBtn"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="155dp"
-        app:srcCompat="@drawable/datas_button" />
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="129dp"
+        android:text="ToggleButton" />
+
+    <ToggleButton
+        android:id="@+id/toggleSoundBtn"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="168dp"
+        android:text="SoundButton" />
+
 </RelativeLayout>

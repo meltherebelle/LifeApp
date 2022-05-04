@@ -15,20 +15,21 @@ public class Acceuil extends AppCompatActivity {
     Button PersoBtn;
     Button WorkBtn;
     Button DatasBtn;
+    Button ResultsBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceuil);
 
-        //retourner sur l'activité main au clic du bouton Return
+        /*//retourner sur l'activité main au clic du bouton Return
         returnBtn = (Button) findViewById(R.id.returnBtn);
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openMainActivity();
             }
-        });
+        });*/
 
         //ouvrir activité Perso au clic du PersoBtn
         PersoBtn = (Button) findViewById(R.id.PersoBtn);
@@ -36,6 +37,15 @@ public class Acceuil extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openPerso();
+            }
+        });
+
+        //ouvrir activité Results au clic du ResultsBtn
+        ResultsBtn = (Button) findViewById(R.id.ResultsBtn);
+        ResultsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openResults();
             }
         });
 
@@ -80,4 +90,8 @@ public class Acceuil extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openResults() {
+        Intent intent = new Intent(this,Results.class);
+        startActivity(intent);
+    }
 }

@@ -14,6 +14,9 @@
             android:name=".Hobby"
             android:exported="false" />
         <activity
+            android:name=".Myday"
+            android:exported="false" />
+        <activity
             android:name=".UpdateHobby"
             android:exported="false" />
         <activity
