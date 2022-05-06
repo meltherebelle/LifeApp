@@ -28,7 +28,7 @@ public class ImBored extends AppCompatActivity {
         //skrillex.start();
 
 
-        //retourner sur Perso
+        /*//retourner sur Perso
         Return13Btn = (Button) findViewById(R.id.Return13Btn);
         Return13Btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +36,7 @@ public class ImBored extends AppCompatActivity {
                 openPerso();
                 onPause(); //et on arrête la musique
             }
-        });
+        });*/
     }
     public void openPerso () {
         Intent intent = new Intent(this, Perso.class);

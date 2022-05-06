@@ -8,84 +8,75 @@
     tools:context=".Perso">
 
     <Button
-        android:id="@+id/Return1Btn"
-        android:layout_width="99dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/custom_button2"
-        android:text="return"
-        android:translationX="16dp"
-        android:translationY="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/ImBoredBtn"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="106dp"
         android:layout_marginEnd="120dp"
         android:background="@drawable/custom_button"
         android:text="I'm Bored"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/RealHobbyBtn"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/MoodBtn"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="120dp"
         android:background="@drawable/custom_button"
         android:text="Hobby"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/todolistBtn"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/RealHobbyBtn"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="46dp"
         android:layout_marginEnd="120dp"
         android:background="@drawable/custom_button"
         android:text="Notes"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/GoalsPersoBtn"
+        android:id="@+id/mydayBtn"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/RealHobbyBtn"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="147dp"
         android:layout_marginEnd="120dp"
         android:background="@drawable/custom_button"
-        android:text="Goals"
+        android:text="My day"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/MoodBtn"
         android:layout_width="170dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/ImBoredBtn"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="43dp"
         android:layout_marginEnd="120dp"
         android:background="@drawable/custom_button"
         android:text="Mood"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </RelativeLayout>

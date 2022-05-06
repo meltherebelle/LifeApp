@@ -4,43 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
-    android:backgroundTint="#FFC107"
+    android:background="@drawable/fond_hobby"
     tools:context=".Hobby">
 
-    <TextView
-        android:id="@+id/TitleHobbytherealone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="-40dp"
-        android:layout_marginTop="24dp"
-        android:text="Select your hobbies"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#E91E63"
-        android:textSize="20dp"
-        android:textStyle="bold|italic"
-        android:translationX="200dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/return22Btn"
-        android:layout_width="99dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="24dp"
-        android:backgroundTint="#FF9800"
-        android:text="return"
-        android:translationX="16dp"
-        android:translationY="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
 
     <ExpandableListView
         android:id="@+id/expandableListHobby"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+
+    </ExpandableListView>
 
 </RelativeLayout>

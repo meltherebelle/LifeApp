@@ -20,72 +20,80 @@
         android:layout_marginBottom="41dp"
         android:background="@drawable/custom_button2"
         android:text="@string/results"
-        android:textColor="@color/black"
+        android:textColor="@color/light_blue_50"
+        android:textSize="18dp"
         android:translationY="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/returnBtn"
-        android:layout_width="99dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="11dp"
-        android:background="@drawable/custom_button2"
-        android:text="@string/Return"
-        android:translationY="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/DatasBtn"
-        android:layout_width="99dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="304dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/custom_button2"
-        android:text="@string/datas"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_button"
+        android:text="Settings"
         android:translationX="-5dp"
-        android:translationY="20dp"
+        android:translationY="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/WorkBtn"
-        android:layout_width="139dp"
-        android:layout_height="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="138dp"
+        android:layout_marginStart="179dp"
         android:layout_marginTop="0dp"
-        android:layout_marginEnd="134dp"
-        android:layout_marginBottom="318dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="275dp"
         android:background="@drawable/custom_button"
         android:text="@string/work"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/PersoBtn"
-        android:layout_width="139dp"
-        android:layout_height="52dp"
+        android:layout_width="207dp"
+        android:layout_height="72dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="137dp"
+        android:layout_marginStart="171dp"
         android:layout_marginTop="150dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="405dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="416dp"
         android:background="@drawable/custom_button"
         android:text="@string/perso"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="326dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="211dp"
+        app:srcCompat="@drawable/image1_acceuil" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="88dp"
+        android:layout_height="99dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="173dp"
+        android:translationY="100dp"
+        app:srcCompat="@drawable/settings_img" />
 
 </RelativeLayout>

@@ -8,11 +8,10 @@ import android.os.Bundle;
 
 public class Perso extends AppCompatActivity {
 
-    Button Return1Btn;
     Button MoodBtn;
+    Button mydayBtn;
     Button ImBoredBtn;
     Button RealHobbyBtn;
-    Button GoalsPersoBtn;
     Button todolistBtn;
 
     @Override
@@ -20,12 +19,20 @@ public class Perso extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perso);
 
-        //retourner sur l'acceuil au clic du bouton Return1Btn
+        /*//retourner sur l'acceuil au clic du bouton Return1Btn
         Return1Btn = (Button) findViewById(R.id.Return1Btn);
         Return1Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openAcceuil();
+            }
+        });*/
+        //ouvrir My day page
+        mydayBtn = (Button) findViewById(R.id.mydayBtn);
+        mydayBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMyDay();
             }
         });
 
@@ -64,16 +71,6 @@ public class Perso extends AppCompatActivity {
                 openHobby();
             }
         });
-
-        //aller sur écran GoalsPerso au clic du bouton GoalsPersoBtn
-        GoalsPersoBtn = (Button) findViewById(R.id.GoalsPersoBtn);
-        GoalsPersoBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openGoalsPerso();
-            }
-        });
-
     }
     public void openAcceuil () {
         Intent intent = new Intent(this, Acceuil.class);
@@ -95,13 +92,13 @@ public class Perso extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openGoalsPerso () {
-        Intent intent = new Intent(this, GoalsPerso.class);
+    public void openHobbies () {
+        Intent intent = new Intent(this, Hobbies.class);
         startActivity(intent);
     }
 
-    public void openHobbies () {
-        Intent intent = new Intent(this, Hobbies.class);
+    public void openMyDay () {
+        Intent intent = new Intent(this, Myday.class);
         startActivity(intent);
     }
 }

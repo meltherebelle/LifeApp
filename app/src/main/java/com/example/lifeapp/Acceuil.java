@@ -14,20 +14,22 @@ public class Acceuil extends AppCompatActivity {
     Button returnBtn;
     Button PersoBtn;
     Button WorkBtn;
+    Button DatasBtn;
+    Button ResultsBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceuil);
 
-        //retourner sur l'activité main au clic du bouton Return
+        /*//retourner sur l'activité main au clic du bouton Return
         returnBtn = (Button) findViewById(R.id.returnBtn);
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openMainActivity();
             }
-        });
+        });*/
 
         //ouvrir activité Perso au clic du PersoBtn
         PersoBtn = (Button) findViewById(R.id.PersoBtn);
@@ -37,6 +39,25 @@ public class Acceuil extends AppCompatActivity {
                 openPerso();
             }
         });
+
+        //ouvrir activité Results au clic du ResultsBtn
+        ResultsBtn = (Button) findViewById(R.id.ResultsBtn);
+        ResultsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openResults();
+            }
+        });
+
+        //ouvrir activité Datas au clic du DatasBtn
+        DatasBtn = (Button) findViewById(R.id.DatasBtn);
+        DatasBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDatas();
+            }
+        });
+
 
         //ouvrir activité Work au clic du WorkBtn
         WorkBtn = (Button) findViewById(R.id.WorkBtn);
@@ -64,4 +85,13 @@ public class Acceuil extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openDatas() {
+        Intent intent = new Intent(this,Datas.class);
+        startActivity(intent);
+    }
+
+    public void openResults() {
+        Intent intent = new Intent(this,Results.class);
+        startActivity(intent);
+    }
 }

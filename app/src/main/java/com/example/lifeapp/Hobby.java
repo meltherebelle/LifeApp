@@ -51,13 +51,13 @@ public class Hobby extends AppCompatActivity {
         expandableListHobby.setAdapter(adpater);
 
         //retourner sur l'acceuil au clic du bouton Return1Btn
-        return22Btn = (Button) findViewById(R.id.return22Btn);
+        /*return22Btn = (Button) findViewById(R.id.return22Btn);
         return22Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
-        });
+        });*/
 
     }
 }
