@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">LifeApp</string>
     <string name="life">LIFE</string>
+    <string name="another_one">Another One</string>
     <string name="enter">Enter</string>
     <string name="datas">Datas</string>
     <string name="perso">Perso</string>

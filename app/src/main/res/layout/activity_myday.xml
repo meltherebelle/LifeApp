@@ -9,45 +9,6 @@
 
 
     <Button
-        android:id="@+id/MDnotesBtn"
-        android:layout_width="273dp"
-        android:layout_height="69dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="115dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="547dp"
-        android:background="@drawable/custom_button"
-        android:text="enter a little memory"
-        android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/MDsongBtn"
-        android:layout_width="273dp"
-        android:layout_height="68dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="403dp"
-        android:background="@drawable/custom_button"
-        android:minHeight="48dp"
-        android:text="enter your song"
-        android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/MDpicBtn"
         android:layout_width="272dp"
         android:layout_height="67dp"
@@ -104,4 +65,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="383dp"
+        android:layout_height="131dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:translationX="129dp"
+        android:translationY="150dp" />
+
 </RelativeLayout>
