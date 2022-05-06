@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:text="00:00"
         android:textColor="@android:color/black"
         android:textSize="60sp" />
@@ -33,5 +34,29 @@
         android:text="reset"
         android:visibility="invisible"
         tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/ReturnBtn22"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button2"
+        android:text="return"
+        android:translationX="16dp"
+        android:translationY="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/PersonalizeTimerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start_pause"
+        android:layout_alignParentStart="false"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="Change your timer" />
 
 </RelativeLayout>

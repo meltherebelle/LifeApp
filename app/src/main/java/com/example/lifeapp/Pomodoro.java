@@ -2,6 +2,7 @@ package com.example.lifeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.os.CountDownTimer;
@@ -18,6 +19,8 @@ public class Pomodoro extends AppCompatActivity {
     private TextView CountdownView;
     private Button ButtonStartPause;
     private Button ButtonReset;
+    Button ReturnBtn22;
+    Button PersonalizeTimerBtn;
 
     private CountDownTimer CountDownTimer;
 
@@ -31,9 +34,25 @@ public class Pomodoro extends AppCompatActivity {
         setContentView(R.layout.activity_pomodoro);
 
         CountdownView = findViewById(R.id.CountownView);
-
         ButtonStartPause = findViewById(R.id.button_start_pause);
         ButtonReset = findViewById(R.id.button_reset);
+        ReturnBtn22 = (Button) findViewById(R.id.ReturnBtn22);
+        PersonalizeTimerBtn = (Button) findViewById(R.id.PersonalizeTimerBtn);
+
+
+        ReturnBtn22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openWork();
+            }
+        });
+
+        PersonalizeTimerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSetting();
+            }
+        });
 
         ButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +95,16 @@ public class Pomodoro extends AppCompatActivity {
         TimerRunning = true;
         ButtonStartPause.setText("pause");
         ButtonReset.setVisibility(View.INVISIBLE);
+    }
+
+    public void openWork() {
+        Intent intent = new Intent(this, Work.class);
+        startActivity(intent);
+    }
+
+    public void openSetting() {
+        Intent intent = new Intent(this, PomodoroSettings.class);
+        startActivity(intent);
     }
 
     private void pauseTimer() {

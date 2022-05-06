@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="Focus time"
+    tools:context=".PomodoroSettings">
+
+    <Button
+        android:id="@+id/ReturnBtn220"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/custom_button2"
+        android:text="return and confirm choices"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/SpinnerFocus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="159dp"
+        android:contentDescription="Focus time"
+        android:minHeight="32dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/SpinnerShortPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/SpinnerShortPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:contentDescription="Short pause time"
+        android:minHeight="48dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="@id/SpinnerFocus"
+        app:layout_constraintStart_toStartOf="@id/SpinnerFocus"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerFocus" />
+
+    <Spinner
+        android:id="@+id/SpinnerLongPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="169dp"
+        android:contentDescription="Long pause time"
+        android:minHeight="48dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/ReturnBtn220"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerShortPause" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
