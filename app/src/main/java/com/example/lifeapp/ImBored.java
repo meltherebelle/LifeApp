@@ -12,16 +12,20 @@ import android.os.Bundle;
 public class ImBored extends AppCompatActivity {
 
     Button Return13Btn;
-    MediaPlayer skrillex;
+    //MediaPlayer skrillex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_im_bored);
 
+        //hello lea c'est delph j'ai mis en commentaire la partie musique pcq ça affiche des ...
+        // ...erreurs de mon côte surement pcq ça va chercher des fichiers locaux chez toi du coup...
+        //...c'est juste temporaire tqt
+
         //Mettre de la musique
-        skrillex = MediaPlayer.create(getApplicationContext(),R.raw.skrillex);
-        skrillex.start();
+        //skrillex = MediaPlayer.create(getApplicationContext(),R.raw.skrillex);
+        //skrillex.start();
 
 
         /*//retourner sur Perso
@@ -40,10 +44,10 @@ public class ImBored extends AppCompatActivity {
     }
 
     //Couper le son :
-    protected void onPause() {
-        super.onPause();
-        skrillex.release();
-        finish();
-    }
+    //protected void onPause() {
+        //super.onPause();
+        //skrillex.release();
+        //finish();
+    //}
 
 }

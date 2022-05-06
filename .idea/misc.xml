@@ -10,26 +10,18 @@
         <entry key="..\:/Users/delph/Documents/EPF/2A/S4/LifeApp/app/src/main/res/layout/quotes.xml" value="0.14666666666666667" />
         <entry key="app/src/main/res/drawable/custom_button.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/custom_button2.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_addhobbies.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/setting_button.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/settings_btn.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/settings_button.xml" value="0.1" />
         <entry key="app/src/main/res/font/aclonica.xml" value="0.20925925925925926" />
-        <entry key="app/src/main/res/layout/activity_acceuil.xml" value="0.2715057373046875" />
-        <entry key="app/src/main/res/layout/activity_add.xml" value="0.2552083333333333" />
-        <entry key="app/src/main/res/layout/activity_datas.xml" value="0.2655069986979166" />
-        <entry key="app/src/main/res/layout/activity_goals_perso.xml" value="0.2563405797101449" />
+        <entry key="app/src/main/res/layout/activity_acceuil.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_datas.xml" value="0.24791666666666667" />
         <entry key="app/src/main/res/layout/activity_hobbies.xml" value="0.28958333333333336" />
-        <entry key="app/src/main/res/layout/activity_hobby.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_im_bored.xml" value="0.21433715820312502" />
+        <entry key="app/src/main/res/layout/activity_hobby.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_im_bored.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2957931518554688" />
         <entry key="app/src/main/res/layout/activity_mood.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_myday.xml" value="0.48149506942085596" />
-        <entry key="app/src/main/res/layout/activity_perso.xml" value="0.28752848307291656" />
-        <entry key="app/src/main/res/layout/activity_results.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_perso.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_results.xml" value="0.23385416666666667" />
         <entry key="app/src/main/res/layout/activity_update_hobby.xml" value="0.24230072463768115" />
-        <entry key="app/src/main/res/layout/activity_work.xml" value="0.25144449869791663" />
+        <entry key="app/src/main/res/layout/activity_work.xml" value="0.23385416666666667" />
       </map>
     </option>
   </component>

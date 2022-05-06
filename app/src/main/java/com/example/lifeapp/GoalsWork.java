@@ -1,9 +1,14 @@
 package com.example.lifeapp;
 
-public class GoalsWork {
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class GoalsWork extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_goals_work);
+    }
 }
-/*
-public void onCheckboxClicked(View view) {
-    // Is the view now checked?
-    boolean checked = ((CheckBox) view).isChecked();
- */

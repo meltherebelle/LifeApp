@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lifeapp" >
+    package="com.example.lifeapp">
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,9 @@
         android:label="Life+"
         android:roundIcon="@drawable/logo_app"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.NoActionBar" >
-
+        android:theme="@style/Theme.Design.NoActionBar">
         <activity
             android:name=".Hobby"
-            android:exported="false" />
-        <activity
-            android:name=".Myday"
             android:exported="false" />
         <activity
             android:name=".UpdateHobby"
@@ -24,6 +20,10 @@
             android:exported="false"
             android:label="Add Hobby"
             android:parentActivityName=".Hobbies" />
+        <activity
+            android:name=".GoalsPerso"
+            android:exported="false"
+            android:label="Personal section - Goals" />
         <activity
             android:name=".Hobbies"
             android:exported="false"
@@ -54,7 +54,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
