@@ -17,19 +17,30 @@ import java.util.Locale;
 
 public class Pomodoro extends AppCompatActivity {
 
-    // IMPORTANT : tous les temps sont en millisecondes
+    /* INFORMATIONS
+    - toutes les durées sont en millisecondes
+    - les durées des différentes phases sont par défaut 25/5/30 min
+    - les durées peuvent êtres modifiées dans PomodoroSettings grâce aux SharedPreferences
+    - Le cycle Pomodoro comporte 8 phases : (permet de déterminer la durée affichée sur le minuteur)
+            > 1,3,5,7 : période de concentration
+            > 2,4,6 : courte pause
+            > 8 : longue pause
+     */
 
-    private static final long START_TIME = 600000;
+    int Phase = 1;
+
+
+
+    private static final long Time = 600000;
+    private boolean TimerRunning;
+    private long TimeLeft = Time;
 
     private TextView CountdownView;
     private Button ButtonStartPause, ButtonReset;
-    Button PersonalizeTimerBtn;
-
     private CountDownTimer CountDownTimer;
 
-    private boolean TimerRunning;
+    Button PersonalizeTimerBtn;
 
-    private long TimeLeft = START_TIME;
     /*
     SharedPreferences sp = getApplicationContext().getSharedPreferences("PomodoroSettings", Context.MODE_PRIVATE);
 
@@ -98,7 +109,7 @@ public class Pomodoro extends AppCompatActivity {
     }
 
     private void resetTimer() {
-        TimeLeft = START_TIME;
+        TimeLeft = Time;
         updateCountDownText();
         ButtonReset.setVisibility(View.INVISIBLE);
         ButtonStartPause.setVisibility(View.VISIBLE);

@@ -1,62 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fond_pomodoro"
     tools:context=".Pomodoro">
 
     <TextView
         android:id="@+id/CountownView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="00:00"
         android:textColor="@android:color/black"
-        android:textSize="60sp" />
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_start_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/CountownView"
-        android:layout_centerHorizontal="true"
-        android:text="start" />
+        android:background="@drawable/custom_button2"
+        android:text="start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CountownView" />
 
     <Button
         android:id="@+id/button_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/CountownView"
         android:layout_marginStart="11dp"
-        android:layout_toEndOf="@+id/button_start_pause"
+        android:background="@drawable/custom_button2"
         android:text="reset"
         android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/button_start_pause"
+        app:layout_constraintTop_toBottomOf="@+id/CountownView"
         tools:visibility="visible" />
 
     <Button
-        android:id="@+id/ReturnBtn22"
-        android:layout_width="99dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/custom_button2"
-        android:text="return"
-        android:translationX="16dp"
-        android:translationY="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/PersonalizeTimerBtn"
+        android:layout_width="179dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/custom_button"
+        android:includeFontPadding="false"
+        android:text="Change your timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_pause" />
+
+    <TextView
+        android:id="@+id/PhaseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button_start_pause"
-        android:layout_alignParentStart="false"
-        android:layout_centerInParent="false"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:text="Change your timer" />
+        android:layout_marginBottom="100dp"
+        android:fontFamily="sans-serif"
+        android:text="It's time to : Focus"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/CountownView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
