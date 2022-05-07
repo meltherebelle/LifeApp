@@ -9,25 +9,34 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.content.Context;
+import android.widget.Toast;
+import android.content.SharedPreferences;
 
 import java.util.Locale;
 
 public class Pomodoro extends AppCompatActivity {
 
-    private static final long START_TIME_IN_MILLIS = 600000;
+    // IMPORTANT : tous les temps sont en millisecondes
+
+    private static final long START_TIME = 600000;
 
     private TextView CountdownView;
-    private Button ButtonStartPause;
-    private Button ButtonReset;
-    Button ReturnBtn22;
+    private Button ButtonStartPause, ButtonReset;
     Button PersonalizeTimerBtn;
 
     private CountDownTimer CountDownTimer;
 
     private boolean TimerRunning;
 
-    private long TimeLeftInMillis = START_TIME_IN_MILLIS;
+    private long TimeLeft = START_TIME;
+    /*
+    SharedPreferences sp = getApplicationContext().getSharedPreferences("PomodoroSettings", Context.MODE_PRIVATE);
 
+    int TimeLeftInSFocus = sp.getInt("FocusTime",0);
+    int TimeLeftInSShort = sp.getInt("ShortPauseTime",0);
+    int TimeLeftInSLong = sp.getInt("LongPauseTime",0);
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,50 +45,29 @@ public class Pomodoro extends AppCompatActivity {
         CountdownView = findViewById(R.id.CountownView);
         ButtonStartPause = findViewById(R.id.button_start_pause);
         ButtonReset = findViewById(R.id.button_reset);
-        ReturnBtn22 = (Button) findViewById(R.id.ReturnBtn22);
-        PersonalizeTimerBtn = (Button) findViewById(R.id.PersonalizeTimerBtn);
+        PersonalizeTimerBtn = findViewById(R.id.PersonalizeTimerBtn);
 
 
-        ReturnBtn22.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openWork();
+        PersonalizeTimerBtn.setOnClickListener(view -> openSetting());
+
+        ButtonStartPause.setOnClickListener(v -> {
+            if (TimerRunning) {
+                pauseTimer();
+            } else {
+                startTimer();
             }
         });
 
-        PersonalizeTimerBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSetting();
-            }
-        });
-
-        ButtonStartPause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (TimerRunning) {
-                    pauseTimer();
-                } else {
-                    startTimer();
-                }
-            }
-        });
-
-        ButtonReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resetTimer();
-            }
-        });
+        ButtonReset.setOnClickListener(v -> resetTimer());
 
         updateCountDownText();
     }
 
     private void startTimer() {
-        CountDownTimer = new CountDownTimer(TimeLeftInMillis, 1000) {
+        CountDownTimer = new CountDownTimer(TimeLeft, 1) {
             @Override
             public void onTick(long millisUntilFinished) {
-                TimeLeftInMillis = millisUntilFinished;
+                TimeLeft = millisUntilFinished;
                 updateCountDownText();
             }
 
@@ -97,11 +85,6 @@ public class Pomodoro extends AppCompatActivity {
         ButtonReset.setVisibility(View.INVISIBLE);
     }
 
-    public void openWork() {
-        Intent intent = new Intent(this, Work.class);
-        startActivity(intent);
-    }
-
     public void openSetting() {
         Intent intent = new Intent(this, PomodoroSettings.class);
         startActivity(intent);
@@ -115,15 +98,15 @@ public class Pomodoro extends AppCompatActivity {
     }
 
     private void resetTimer() {
-        TimeLeftInMillis = START_TIME_IN_MILLIS;
+        TimeLeft = START_TIME;
         updateCountDownText();
         ButtonReset.setVisibility(View.INVISIBLE);
         ButtonStartPause.setVisibility(View.VISIBLE);
     }
 
     private void updateCountDownText() {
-        int minutes = (int) (TimeLeftInMillis / 1000) / 60;
-        int seconds = (int) (TimeLeftInMillis / 1000) % 60;
+        int minutes = (int) (TimeLeft/1000) / 60;
+        int seconds = (int) (TimeLeft/1000) % 60;
 
         String timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
 

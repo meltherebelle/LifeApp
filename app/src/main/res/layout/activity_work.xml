@@ -8,19 +8,6 @@
     tools:context=".Work">
 
     <Button
-        android:id="@+id/ReturnBtn2"
-        android:layout_width="99dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="5dp"
-        android:text="return"
-        android:background="@drawable/custom_button"
-        android:translationX="16dp"
-        android:translationY="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/Pomodoro"
         android:layout_width="0dp"
         android:layout_height="49dp"
@@ -39,14 +26,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="173dp"
         android:layout_marginEnd="120dp"
         android:background="@drawable/custom_button2"
         android:text="Get motivated"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ReturnBtn2"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button

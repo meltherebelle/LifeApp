@@ -8,7 +8,7 @@
     tools:context=".PomodoroSettings">
 
     <Button
-        android:id="@+id/ReturnBtn220"
+        android:id="@+id/SaveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="25dp"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="159dp"
         android:contentDescription="Focus time"
-        android:minHeight="32dp"
+        android:minHeight="48dp"
         android:spinnerMode="dropdown"
         app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/SpinnerShortPause"
@@ -53,7 +53,7 @@
         android:contentDescription="Long pause time"
         android:minHeight="48dp"
         android:spinnerMode="dialog"
-        app:layout_constraintBottom_toTopOf="@+id/ReturnBtn220"
+        app:layout_constraintBottom_toTopOf="@+id/SaveBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpinnerShortPause" />
