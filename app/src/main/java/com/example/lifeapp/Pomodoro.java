@@ -58,8 +58,7 @@ public class Pomodoro extends AppCompatActivity {
         ButtonReset = findViewById(R.id.button_reset);
         PersonalizeTimerBtn = findViewById(R.id.PersonalizeTimerBtn);
 
-
-        PersonalizeTimerBtn.setOnClickListener(view -> openSetting());
+        PersonalizeTimerBtn.setOnClickListener(v -> openSettings());
 
         ButtonStartPause.setOnClickListener(v -> {
             if (TimerRunning) {
@@ -96,7 +95,7 @@ public class Pomodoro extends AppCompatActivity {
         ButtonReset.setVisibility(View.INVISIBLE);
     }
 
-    public void openSetting() {
+    public void openSettings() {
         Intent intent = new Intent(this, PomodoroSettings.class);
         startActivity(intent);
     }
