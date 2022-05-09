@@ -18,13 +18,6 @@ import android.widget.Toast;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-
 
 public class PomodoroSettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -70,7 +63,6 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
         LPTime = timetemp;
         System.out.println(timetemp);
 
-
     }
 
     @Override
@@ -79,16 +71,15 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
         Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
         System.out.println("LA JE VAIS PRINT TEXT " + text);
 
-        switch (text){
-            case "10 min" : timetemp = 600;
-            case "15 min" : timetemp = 900;
-            case "20 min" : timetemp = 1200;
-            case "25 min" : timetemp = 1500;
-            case "30 min" : timetemp = 1800;
-            default : timetemp = 1;
-        }
+        if (text.contains("10 min")){timetemp = 600;}
+        else if (text.contains("15 min")){timetemp = 900;}
+        else if (text.contains("20 min")){timetemp = 1200;}
+        else if (text.contains("25 min")){timetemp = 1500;}
+        else if (text.contains("30 min")){timetemp = 1800;}
+        else {timetemp = 1;}
 
         System.out.println("LA JE VAIS PRINT TIMETEMP " + timetemp);
+        System.out.println("LA JE VAIS PRINT Text " + text);
 
     }
 
@@ -96,18 +87,6 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
     public void onNothingSelected(AdapterView<?> parent) {
     }
 
-    public void enregistrerLesDureesDansFichier(PomodoroTimes PTimes, String nomFichier) {
-        FileOutputStream fichierSortie = null;
-        try {
-            fichierSortie = this.getApplicationContext().openFileOutput(nomFichier,
-                    Context.MODE_PRIVATE);
-            ObjectOutputStream out = new ObjectOutputStream(fichierSortie);
-            out.writeObject(PTimes);
-            out.close();
-            fichierSortie.close();
-        } catch (IOException i) {
-            i.printStackTrace();
-        }
-    }
+
 
 }

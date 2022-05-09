@@ -12,18 +12,18 @@
     <string name="short_pause_time">Short pause time</string>
     <string name="long_pause_time">Long pause time</string>
     <string-array name="Options_focus">
-        <item>20 min</item>
-        <item>25 min</item>
-        <item>30 min</item>
+        <item name = "3">20 min</item>
+        <item name = "4">25 min</item>
+        <item name = "5">30 min</item>
     </string-array>
     <string-array name="Options_short">
-        <item>10 min</item>
-        <item>15 min</item>
-        <item>20 min</item>
+        <item name = "1">10 min</item>
+        <item name = "2">15 min</item>
+        <item name = "3">20 min</item>
     </string-array>
     <string-array name="Options_long">
-        <item>20 min</item>
-        <item>25 min</item>
-        <item>30 min</item>
+        <item name = "3">20 min</item>
+        <item name = "4">25 min</item>
+        <item name = "5">30 min</item>
     </string-array>
 </resources>
