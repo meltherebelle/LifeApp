@@ -22,7 +22,7 @@
             android:name=".Hobby"
             android:exported="false" />
         <activity
-            android:name=".actQuotes"
+            android:name=".Quotes"
             android:exported="false" />
         <activity
             android:name=".UpdateHobby"
