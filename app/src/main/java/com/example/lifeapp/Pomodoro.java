@@ -29,8 +29,6 @@ public class Pomodoro extends AppCompatActivity {
 
     int Phase = 1;
 
-
-
     private static final long Time = 600000;
     private boolean TimerRunning;
     private long TimeLeft = Time;

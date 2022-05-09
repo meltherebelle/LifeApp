@@ -80,11 +80,11 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
         System.out.println("LA JE VAIS PRINT TEXT " + text);
 
         switch (text){
-            case "10 min " : timetemp = 600;
-            case "15 min " : timetemp = 900;
-            case "20 min " : timetemp = 1200;
-            case "25 min " : timetemp = 1500;
-            case "30 min " : timetemp = 1800;
+            case "10 min" : timetemp = 600;
+            case "15 min" : timetemp = 900;
+            case "20 min" : timetemp = 1200;
+            case "25 min" : timetemp = 1500;
+            case "30 min" : timetemp = 1800;
             default : timetemp = 1;
         }
 

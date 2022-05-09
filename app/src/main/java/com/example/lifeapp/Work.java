@@ -31,7 +31,7 @@ public class Work extends AppCompatActivity {
 
 
     public void openQuotes() {
-        Intent intent = new Intent(this, actQuotes.class);
+        Intent intent = new Intent(this, Quotes.class);
         startActivity(intent);
     }
 
