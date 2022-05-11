@@ -1,5 +1,7 @@
 package com.example.lifeapp;
 
+//https://www.youtube.com/watch?v=RsirzntnFAw
+
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -9,9 +11,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Random;
-
-//voir partie Lea
-
 
 public class Quotes extends AppCompatActivity {
 
@@ -35,4 +34,3 @@ public class Quotes extends AppCompatActivity {
     }
 
 }
-//https://www.youtube.com/watch?v=RsirzntnFAw

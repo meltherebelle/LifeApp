@@ -5,6 +5,10 @@ package com.example.lifeapp;
 //https://developer.android.com/reference/android/content/SharedPreferences
 //https://www.youtube.com/watch?v=jiD2fxn8iKA
 
+// envoyer les durees sur la classe pomodoro:
+//https://developer.android.com/training/basics/intents/result
+//https://stackoverflow.com/questions/10674390/how-to-pass-value-data-between-classes-activity-in-android
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,13 +19,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
 
 public class PomodoroSettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    long timetemp;
+    static long timetemp;
     long FTime;
     long SPTime;
     long LPTime;
@@ -48,28 +49,27 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
 
         spinner1.setAdapter(adapter1);
         spinner1.setOnItemSelectedListener(this);
-        FTime = timetemp;
-        System.out.println("ICI JE VAIS IMPRIMER FTIME " + timetemp);
-
+        FTime = timetemp; // on create ne s'execute qu'une seule fois
+        // il fauxdrait intégrer l'enregistrement des variables dans la methode onitemselected
+        System.out.println("ICI JE VAIS IMPRIMER FTIME " + FTime);
+        String text1 =  "ICI JE VAIS IMPRIMER FTIME " + FTime;
+        Toast.makeText(getApplicationContext(), text1, Toast.LENGTH_SHORT).show();
 
         spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
         SPTime = timetemp;
-        System.out.println(timetemp);
-
+        System.out.println("ICI JE VAIS IMPRIMER SPTIME " + SPTime);
 
         spinner3.setAdapter(adapter3);
         spinner3.setOnItemSelectedListener(this);
         LPTime = timetemp;
-        System.out.println(timetemp);
-
+        System.out.println("ICI JE VAIS IMPRIMER LPTIME " + LPTime);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String text = parent.getItemAtPosition(position).toString();
         Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-        System.out.println("LA JE VAIS PRINT TEXT " + text);
 
         if (text.contains("10 min")){timetemp = 600;}
         else if (text.contains("15 min")){timetemp = 900;}
@@ -77,10 +77,6 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
         else if (text.contains("25 min")){timetemp = 1500;}
         else if (text.contains("30 min")){timetemp = 1800;}
         else {timetemp = 1;}
-
-        System.out.println("LA JE VAIS PRINT TIMETEMP " + timetemp);
-        System.out.println("LA JE VAIS PRINT Text " + text);
-
     }
 
     @Override

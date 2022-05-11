@@ -1,7 +1,22 @@
 package com.example.lifeapp;
 
+/*
+sources :
+https://www.youtube.com/watch?v=MDuGwI6P-X8
+
+ INFORMATIONS
+    - toutes les durées sont en millisecondes
+    - les durées des différentes phases sont par défaut 25/5/30 min
+    - les durées peuvent êtres modifiées dans PomodoroSettings grâce aux SharedPreferences
+    - Le cycle Pomodoro comporte 8 phases : (permet de déterminer la durée affichée sur le minuteur)
+            > 1,3,5,7 : période de concentration
+            > 2,4,6 : courte pause
+            > 8 : longue pause
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -17,19 +32,9 @@ import java.util.Locale;
 
 public class Pomodoro extends AppCompatActivity {
 
-    /* INFORMATIONS
-    - toutes les durées sont en millisecondes
-    - les durées des différentes phases sont par défaut 25/5/30 min
-    - les durées peuvent êtres modifiées dans PomodoroSettings grâce aux SharedPreferences
-    - Le cycle Pomodoro comporte 8 phases : (permet de déterminer la durée affichée sur le minuteur)
-            > 1,3,5,7 : période de concentration
-            > 2,4,6 : courte pause
-            > 8 : longue pause
-     */
+    int phase = 1;
 
-    int Phase = 1;
-
-    private static final long Time = 600000;
+    private static long Time = 600000;
     private boolean TimerRunning;
     private long TimeLeft = Time;
 
@@ -42,10 +47,18 @@ public class Pomodoro extends AppCompatActivity {
     /*
     SharedPreferences sp = getApplicationContext().getSharedPreferences("PomodoroSettings", Context.MODE_PRIVATE);
 
-    int TimeLeftInSFocus = sp.getInt("FocusTime",0);
-    int TimeLeftInSShort = sp.getInt("ShortPauseTime",0);
-    int TimeLeftInSLong = sp.getInt("LongPauseTime",0);
+    long FTime = sp.getInt("FocusTime",0);
+    long SPTime = sp.getInt("ShortPauseTime",0);
+    long LPTime = sp.getInt("LongPauseTime",0);
     */
+
+    long FTime;
+    long SPTime;
+    long LPTime;
+
+    TextView PhaseName;
+
+    @SuppressLint("CutPasteId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +68,22 @@ public class Pomodoro extends AppCompatActivity {
         ButtonStartPause = findViewById(R.id.button_start_pause);
         ButtonReset = findViewById(R.id.button_reset);
         PersonalizeTimerBtn = findViewById(R.id.PersonalizeTimerBtn);
+        PhaseName = findViewById(R.id.PhaseName);
 
         PersonalizeTimerBtn.setOnClickListener(v -> openSettings());
+
+        //partie qui définit le time et l'affichage selon la phase
+
+        switch (phase){
+            case 1 : Time = FTime; PhaseName.setText("It's time to : Focus");
+            case 2 : Time = SPTime; PhaseName.setText("It's time to : Have a short break");
+            case 3 : Time = FTime; PhaseName.setText("It's time to : Focus");
+            case 4 : Time = SPTime; PhaseName.setText("It's time to : Have a short break");
+            case 5 : Time = FTime; PhaseName.setText("It's time to : Focus");
+            case 6 : Time = SPTime; PhaseName.setText("It's time to : Have a short break");
+            case 7 : Time = FTime; PhaseName.setText("It's time to : Focus");
+            case 8 : Time = LPTime; PhaseName.setText("It's time to : Have a long break");
+        }
 
         ButtonStartPause.setOnClickListener(v -> {
             if (TimerRunning) {
@@ -120,6 +147,4 @@ public class Pomodoro extends AppCompatActivity {
 
         CountdownView.setText(timeLeftFormatted);
     }
-
 }
-//https://www.youtube.com/watch?v=MDuGwI6P-X8

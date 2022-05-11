@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saveSettings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:contentDescription="@string/focus_time"
@@ -11,12 +12,11 @@
         android:id="@+id/SpinnerFocus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="159dp"
+        android:layout_marginTop="152dp"
         android:contentDescription="@string/focus_time"
         android:minHeight="48dp"
         android:spinnerMode="dropdown"
         app:layout_constraintBaseline_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/SpinnerShortPause"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,24 +26,37 @@
         android:id="@+id/SpinnerShortPause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/short_pause_time"
         android:minHeight="48dp"
         android:spinnerMode="dialog"
-        app:layout_constraintEnd_toEndOf="@id/SpinnerFocus"
-        app:layout_constraintStart_toStartOf="@id/SpinnerFocus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpinnerFocus" />
 
     <Spinner
         android:id="@+id/SpinnerLongPause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/long_pause_time"
         android:minHeight="48dp"
         android:spinnerMode="dialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpinnerShortPause" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/custom_button2"
+        android:text="Save settings"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerLongPause" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
