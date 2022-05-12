@@ -4,46 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center|center_horizontal">
-
-    <TextView
-        android:id="@+id/RandomQuote"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="339dp"
-        android:text="Random Quote Generator"
-        android:textAlignment="center"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+    android:background="@drawable/fond_getmotivated"
+    tools:context=".Quotes">
 
     <Button
         android:id="@+id/NewQuote"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="128dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/custom_button2"
         android:text="@string/another_one"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RandomQuote" />
 
-    <Button
-        android:id="@+id/ReturnBtn21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="43dp"
-        android:text="Return"
+    <TextView
+        android:id="@+id/RandomQuote"
+        android:layout_width="282dp"
+        android:layout_height="92dp"
+        android:autoText="false"
+        android:gravity="center"
+        android:text="Random Quote Generator"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417" />
 </androidx.constraintlayout.widget.ConstraintLayout>

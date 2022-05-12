@@ -5,6 +5,10 @@ package com.example.lifeapp;
 //https://developer.android.com/reference/android/content/SharedPreferences
 //https://www.youtube.com/watch?v=jiD2fxn8iKA
 
+// envoyer les durees sur la classe pomodoro:
+//https://developer.android.com/training/basics/intents/result
+//https://stackoverflow.com/questions/10674390/how-to-pass-value-data-between-classes-activity-in-android
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,17 +17,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Button;
 import android.widget.Toast;
-import android.content.Context;
-import android.content.SharedPreferences;
 
 
 public class PomodoroSettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    SharedPreferences sp = getSharedPreferences("PomodoroSettings", Context.MODE_PRIVATE);
-    Button saveBtn;
-    int timetemp;
+    static long timetemp;
+    long FTime;
+    long SPTime;
+    long LPTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,44 +47,53 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        SharedPreferences.Editor editor = sp.edit();
-
         spinner1.setAdapter(adapter1);
         spinner1.setOnItemSelectedListener(this);
-        editor.putInt("FocusTime",timetemp);
-        editor.commit();
+        // on create ne s'execute qu'une seule fois
+        // il fauxdrait intégrer l'enregistrement des variables dans la methode onitemselected
+
+        String text1 =  "ICI JE VAIS IMPRIMER FTIME " + FTime;
+        Toast.makeText(getApplicationContext(), text1, Toast.LENGTH_SHORT).show();
 
         spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
-        editor.putInt("ShortPauseTime",timetemp);
-        editor.commit();
 
         spinner3.setAdapter(adapter3);
         spinner3.setOnItemSelectedListener(this);
-        editor.putInt("LongPauseTime",timetemp);
-        editor.commit();
-        Toast.makeText(this, "Information saved.",Toast.LENGTH_LONG).show();
+
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        //part 1 : faire apparaitre le choix
         String text = parent.getItemAtPosition(position).toString();
         Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        attributionDuree(text);
+    }
 
-        //part 2 : traduire le choix en (int) nombre de secondes
-        switch (text){
-            case "10 min" : timetemp = 600;
-            case "15 min" : timetemp = 900;
-            case "20 min" : timetemp = 1200;
-            case "25 min" : timetemp = 1500;
-            case "30 min" : timetemp = 1800;
-        }
+    public void attributionDuree(String text){
+
+        if (text.contains("f : 20 min")){FTime = 1200;}
+        else if (text.contains("f : 25 min")){FTime = 1500;}
+        else if (text.contains("f : 30 min")){FTime = 1800;}
+
+        else if (text.contains("sp : 10 min")){SPTime = 600;}
+        else if (text.contains("sp : 15 min")){SPTime = 900;}
+        else if (text.contains("sp : 20 min")){SPTime = 1200;}
+
+        else if (text.contains("lp : 20 min")){LPTime = 1200;}
+        else if (text.contains("lp : 25 min")){LPTime = 1500;}
+        else if (text.contains("lp : 30 min")){LPTime = 1800;}
+
+        else {System.out.println("erreur dans la méthode attribution des durées");}
+
+        System.out.println("ICI JE VAIS IMPRIMER FTIME " + FTime);
+        System.out.println("ICI JE VAIS IMPRIMER SPTIME " + SPTime);
+        System.out.println("ICI JE VAIS IMPRIMER LPTIME " + LPTime);
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-
     }
+
 
 }
