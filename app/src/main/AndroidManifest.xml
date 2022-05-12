@@ -16,6 +16,9 @@
             android:name=".Pomodoro"
             android:exported="false" />
         <activity
+            android:name=".Myday"
+            android:exported="false" />
+        <activity
             android:name=".GoalsWork"
             android:exported="false" />
         <activity
@@ -32,10 +35,7 @@
             android:exported="false"
             android:label="Add Hobby"
             android:parentActivityName=".Hobbies" />
-        <activity
-            android:name=".GoalsPerso"
-            android:exported="false"
-            android:label="Personal section - Goals" />
+
         <activity
             android:name=".Hobbies"
             android:exported="false"
