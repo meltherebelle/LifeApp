@@ -5,15 +5,139 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fond_hobby"
-    tools:context=".Hobby">
+    android:orientation="vertical"
+    tools:context="com.example.lifeapp.Hobby">
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="running"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
 
-    <ExpandableListView
-        android:id="@+id/expandableListHobby"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="reading"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
 
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="working-out"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
 
-    </ExpandableListView>
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox3"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="play music"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox4"
+        android:layout_marginBottom="-4dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="windsurfing"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox5"
+        android:layout_marginBottom="-4dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="skateboarding"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox7"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="surfing"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox8"
+        android:layout_marginBottom="-371dp"
+        android:background="@drawable/custom_edittext"
+        android:minHeight="48dp"
+        android:text="........."
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="386dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="129dp"
+        android:background="@drawable/custom_button2"
+        android:text="submit" />
+
+    <Button
+        android:id="@+id/addHobby"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/ic_add"
+        android:contentDescription="@string/Generate"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/txtAdd"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="55dp"
+        android:text="click button then type here to ADD"
+        android:textColor="@color/black" />
 
 </RelativeLayout>

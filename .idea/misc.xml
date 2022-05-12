@@ -18,13 +18,27 @@
         <entry key="..\:/Users/delph/Documents/EPF/2A/S4/LifeApp/app/src/main/res/layout/activity_quotes.xml" value="0.1" />
         <entry key="..\:/Users/delph/Documents/EPF/2A/S4/LifeApp/app/src/main/res/layout/activity_work.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/delph/Documents/EPF/2A/S4/LifeApp/app/src/main/res/layout/quotes.xml" value="0.14666666666666667" />
+        <entry key="app/src/main/res/drawable-v24/custom_edittext.xml" value="0.1275" />
+        <entry key="app/src/main/res/drawable/cardview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/colors.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/custom_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/custom_seekbar.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/custom_thumb.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_addhobbies.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_acceuil.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_act_quotes.xml" value="0.20652173913043478" />
         <entry key="app/src/main/res/layout/activity_datas.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_hobbies.xml" value="0.19157608695652173" />
+        <entry key="app/src/main/res/layout/activity_hobby.xml" value="0.35554139843545696" />
+        <entry key="app/src/main/res/layout/activity_im_bored.xml" value="0.18614130434782608" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2957931518554688" />
+        <entry key="app/src/main/res/layout/activity_mood.xml" value="0.28518066406250003" />
+        <entry key="app/src/main/res/layout/activity_myday.xml" value="0.23192749023437503" />
         <entry key="app/src/main/res/layout/activity_perso.xml" value="0.24791666666666667" />
         <entry key="app/src/main/res/layout/activity_results.xml" value="0.23385416666666667" />
         <entry key="app/src/main/res/layout/activity_update_hobby.xml" value="0.24230072463768115" />
         <entry key="app/src/main/res/layout/activity_work.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/layout/dashboard.xml" value="0.25" />
       </map>
     </option>
   </component>

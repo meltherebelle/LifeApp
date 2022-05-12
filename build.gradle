@@ -7,3 +7,7 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+dependencies {
+// don t forget to change 25.3.1 to your api lvl mine is 25.3.1
+     'androidx.cardview.widget.CardView'
+}

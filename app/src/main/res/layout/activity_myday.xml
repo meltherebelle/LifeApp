@@ -10,41 +10,27 @@
 
     <Button
         android:id="@+id/MDpicBtn"
-        android:layout_width="272dp"
-        android:layout_height="67dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="414dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="252dp"
         android:background="@drawable/custom_button"
-        android:text="enter a fun pic"
-        android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="upload a fun pic"
+        android:textSize="17dp" />
 
     <Button
         android:id="@+id/MDshareBtn"
-        android:layout_width="133dp"
-        android:layout_height="59dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="264dp"
-        android:layout_marginTop="532dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="142dp"
         android:background="@drawable/custom_button"
         android:text="Share"
-        android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="17dp" />
 
     <Button
         android:id="@+id/saveBtn"
@@ -66,18 +52,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="383dp"
-        android:layout_height="131dp"/>
-
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/EditTxtNote"
         android:layout_width="259dp"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTxtmusic"
+        android:layout_marginBottom="75dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:translationX="129dp"
-        android:translationY="150dp" />
+        android:minHeight="48dp"
+        android:text="Type in a memory"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:translationX="129dp" />
+
+    <EditText
+        android:id="@+id/EditTxtmusic"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="395dp"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:text="enter your song of the day"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:translationX="129dp" />
 
 </RelativeLayout>

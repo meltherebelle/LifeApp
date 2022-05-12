@@ -15,19 +15,7 @@ public class Mood extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood);
 
-        //retourner sur Perso
-        Return14Btn = (Button) findViewById(R.id.Return14Btn);
-        Return14Btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openPerso();
-            }
-        });
     }
 
-    public void openPerso () {
-        Intent intent = new Intent(this, Perso.class);
-        startActivity(intent);
-    }
 
 }
