@@ -49,40 +49,51 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
 
         spinner1.setAdapter(adapter1);
         spinner1.setOnItemSelectedListener(this);
-        FTime = timetemp; // on create ne s'execute qu'une seule fois
+        // on create ne s'execute qu'une seule fois
         // il fauxdrait intégrer l'enregistrement des variables dans la methode onitemselected
-        System.out.println("ICI JE VAIS IMPRIMER FTIME " + FTime);
+
         String text1 =  "ICI JE VAIS IMPRIMER FTIME " + FTime;
         Toast.makeText(getApplicationContext(), text1, Toast.LENGTH_SHORT).show();
 
         spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
-        SPTime = timetemp;
-        System.out.println("ICI JE VAIS IMPRIMER SPTIME " + SPTime);
 
         spinner3.setAdapter(adapter3);
         spinner3.setOnItemSelectedListener(this);
-        LPTime = timetemp;
-        System.out.println("ICI JE VAIS IMPRIMER LPTIME " + LPTime);
+
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String text = parent.getItemAtPosition(position).toString();
         Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        attributionDuree(text);
+    }
 
-        if (text.contains("10 min")){timetemp = 600;}
-        else if (text.contains("15 min")){timetemp = 900;}
-        else if (text.contains("20 min")){timetemp = 1200;}
-        else if (text.contains("25 min")){timetemp = 1500;}
-        else if (text.contains("30 min")){timetemp = 1800;}
-        else {timetemp = 1;}
+    public void attributionDuree(String text){
+
+        if (text.contains("f : 20 min")){FTime = 1200;}
+        else if (text.contains("f : 25 min")){FTime = 1500;}
+        else if (text.contains("f : 30 min")){FTime = 1800;}
+
+        else if (text.contains("sp : 10 min")){SPTime = 600;}
+        else if (text.contains("sp : 15 min")){SPTime = 900;}
+        else if (text.contains("sp : 20 min")){SPTime = 1200;}
+
+        else if (text.contains("lp : 20 min")){LPTime = 1200;}
+        else if (text.contains("lp : 25 min")){LPTime = 1500;}
+        else if (text.contains("lp : 30 min")){LPTime = 1800;}
+
+        else {System.out.println("erreur dans la méthode attribution des durées");}
+
+        System.out.println("ICI JE VAIS IMPRIMER FTIME " + FTime);
+        System.out.println("ICI JE VAIS IMPRIMER SPTIME " + SPTime);
+        System.out.println("ICI JE VAIS IMPRIMER LPTIME " + LPTime);
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
     }
-
 
 
 }
