@@ -9,7 +9,6 @@ package com.example.lifeapp;
 //https://developer.android.com/training/basics/intents/result
 //https://stackoverflow.com/questions/10674390/how-to-pass-value-data-between-classes-activity-in-android
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -19,10 +18,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-
 public class PomodoroSettings extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    static long timetemp;
     long FTime;
     long SPTime;
     long LPTime;
@@ -49,18 +46,14 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
 
         spinner1.setAdapter(adapter1);
         spinner1.setOnItemSelectedListener(this);
-        // on create ne s'execute qu'une seule fois
-        // il fauxdrait intégrer l'enregistrement des variables dans la methode onitemselected
 
         String text1 =  "ICI JE VAIS IMPRIMER FTIME " + FTime;
-        Toast.makeText(getApplicationContext(), text1, Toast.LENGTH_SHORT).show();
 
         spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
 
         spinner3.setAdapter(adapter3);
         spinner3.setOnItemSelectedListener(this);
-
     }
 
     @Override
@@ -86,9 +79,9 @@ public class PomodoroSettings extends AppCompatActivity implements AdapterView.O
 
         else {System.out.println("erreur dans la méthode attribution des durées");}
 
-        System.out.println("ICI JE VAIS IMPRIMER FTIME " + FTime);
-        System.out.println("ICI JE VAIS IMPRIMER SPTIME " + SPTime);
-        System.out.println("ICI JE VAIS IMPRIMER LPTIME " + LPTime);
+        System.out.println("Ici je vais imprimer FTime " + FTime);
+        System.out.println("Ici je vais imprimer SPTime " + SPTime);
+        System.out.println("Ici je vais imprimer LPTime " + LPTime);
     }
 
     @Override

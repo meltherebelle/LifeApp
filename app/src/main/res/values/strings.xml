@@ -12,6 +12,7 @@
     <string name="focus_time">Focus time</string>
     <string name="short_pause_time">Short pause time</string>
     <string name="long_pause_time">Long pause time</string>
+    <string name="save_settings">Save settings</string>
     <string-array name="Options_focus">
         <item name = "3">f : 20 min</item>
         <item name = "4">f : 25 min</item>
