@@ -52,9 +52,9 @@ public class Pomodoro extends AppCompatActivity {
     long LPTime = sp.getInt("LongPauseTime",0);
     */
 
-    long FTime;
-    long SPTime;
-    long LPTime;
+    long FTime = 1500;
+    long SPTime = 900;
+    long LPTime = 1800;
 
     TextView PhaseName;
 

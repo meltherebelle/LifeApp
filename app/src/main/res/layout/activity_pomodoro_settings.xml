@@ -5,6 +5,7 @@
     android:id="@+id/saveSettings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fond_pomodoro_settings"
     android:contentDescription="@string/focus_time"
     tools:context=".PomodoroSettings">
 
@@ -12,10 +13,11 @@
         android:id="@+id/SpinnerFocus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="244dp"
         android:contentDescription="@string/focus_time"
         android:minHeight="48dp"
         android:spinnerMode="dropdown"
+        android:theme="@style/Theme.LifeApp"
         app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,10 +28,11 @@
         android:id="@+id/SpinnerShortPause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="64dp"
         android:contentDescription="@string/short_pause_time"
         android:minHeight="48dp"
         android:spinnerMode="dialog"
+        android:theme="@style/Theme.LifeApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpinnerFocus" />
@@ -38,10 +41,11 @@
         android:id="@+id/SpinnerLongPause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="68dp"
         android:contentDescription="@string/long_pause_time"
         android:minHeight="48dp"
         android:spinnerMode="dialog"
+        android:theme="@style/Theme.LifeApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpinnerShortPause" />
@@ -50,13 +54,12 @@
         android:id="@+id/button"
         android:layout_width="143dp"
         android:layout_height="52dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="56dp"
         android:background="@drawable/custom_button2"
-        android:text="Save settings"
+        android:text="@string/save_settings"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpinnerLongPause" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
