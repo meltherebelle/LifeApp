@@ -4,19 +4,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fond_moodv2"
+    android:background="@drawable/fond_mood"
     tools:context=".Mood">
 
-    <Button
-        android:id="@+id/Return14Btn"
-        android:layout_width="98dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/back_button"
-        android:translationX="16dp"
-        android:translationY="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="420dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/moodcard"
+            android:layout_width="344dp"
+            android:layout_height="176dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="334dp"
+                    android:layout_height="99dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_mood"
+                    android:padding="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:maxWidth="15dp"
+                    android:maxHeight="15dp"
+                    android:minWidth="15dp"
+                    android:minHeight="15dp"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="217dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/moodsleep"
+            android:layout_width="344dp"
+            android:layout_height="176dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="334dp"
+                    android:layout_height="99dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_vitality"
+                    android:padding="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:maxWidth="15dp"
+                    android:maxHeight="15dp"
+                    android:minWidth="15dp"
+                    android:minHeight="15dp"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
 
 </RelativeLayout>
